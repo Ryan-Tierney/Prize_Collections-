@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="1tr"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Collections Log</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body> 
+        <header>
+            <h2>Collections Log</h2>
+        </header>
+    
+        <main> 
+            <h3> Start a new collection</h3>
+            <div class="new_collection_container">
+            <form id="new_collection_form">
+                <label>Name:</label>
+                <input type="text", id="name", style="border-color:red;"><br/><br/> 
+
+                <label>Description:</label>
+                <input type="text", id="description", style="border-color:red;"><br/><br/>
+
+                <label>Worth:</label>
+                <input type="text", id="worth", style="border-color: red;"><br/><br/>
+                
+                <input type="submit", value="Submit" style="color:white;background-color:red ">
+            </form>
+
+            </div> 
+
+            <h3> Here are your collections!</h3>
+
+
+
+
+            <div id="collections=container">
+
+
+                
+            </div>
+        </main>
+
+        <script src="src/collections.js"></script> 
+        <script src="src/items.js"></script>
+        <script src="src/index.js"></script>
+    </body>
+</html>

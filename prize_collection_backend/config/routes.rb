@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
 
-      resources :collections 
+      resources :collections do 
+        resources :items 
+      end
+
+      resources :items 
     end 
   end 
 end

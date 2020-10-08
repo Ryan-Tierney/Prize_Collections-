@@ -1,38 +1,38 @@
 class Api::V1::ItemsController < ApplicationController
-    
+    before_action :set_item, only: [:show, :update, :destroy]
     def index 
         @items = Item.all 
      
-        render json: @items, status: 200 
+        render json: @items  
     end 
 
-    def show 
-        @item = Item.find(params[:id])
-
-        render json: @item, status: 200 
+    def show
+        render json: @item  
     end 
 
     def create 
         @item = Item.Create(item_params)
 
-        render json: @item, status: 200 
+        render json: @item  
     end 
 
     def update 
-        @item = Item.find(params[:id])
         @item.update(item_params)
 
-        render json: @item, status: 200 
+        render json: @item 
     end 
 
     def destroy 
-        @item = Item.find(params[:id])
         @item.delete 
 
         render json: {itemId: @item.id}
     end
     
     private 
+
+    def set_item 
+        @item = Item.find(params[:id])
+    end
 
     def item_params 
         params.require(:item).permit(:name, :description, :individual_worth, :collection_id)

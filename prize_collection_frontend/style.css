@@ -5,10 +5,39 @@ body {
     background-color: rgb(175, 175, 175);
   }
 
+  #collections-container {  
+    background-color: white;
+    color: red;
+    font-family: Helvetica;
+    display: inline-flex;
+    border: 2px solid black;
+    padding: 10px;
+    border-left: 2px solid black;
+    padding-left: 10px;
+    
+  }
+
+  #renderLi { 
+    
+  }
+
+  #items-container {  
+    background-color: white;
+    color: red;
+    font-family: Helvetica;
+    display: inline-flex;
+    border: 2px solid black;
+    padding: 10px;
+    border-left: 2px solid black;
+    padding-left: 10px;
+    
+  }
   
   header {
     margin: 0 auto;
     height: 50px;
+    background-color: white;
+    border: 2px solid black;
   }
   
   header h2 {
@@ -18,49 +47,15 @@ body {
 
   }
   
-  /* main {
+   main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
     padding-top: 10px;
     padding-bottom: 30px;
-  } */
-  
-  form input, textarea {
-    border: 5px;
-    font-size: 1.00em;
-
-  }
-  div.card {
-    /*height: 250px;*/
-    /*width: 800px; */
-    box-shadow: 10px 10px grey;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 20px;
-    /* font-size: 1.00em; */
-
-  }
+  } 
 
 
-  
 
-  
-  li {
-    font-size: 1.00em;
-    list-style: none;
-    padding-right: 20px;
-  }
-  
-  button {
-    font-size: 1.0em;
-    color: #fff;
-    /* background-color: gray; */
-    /*border-radius: 10px;*/
-  }
-  
-  button.release {
-    float: right;
-    background-color: #E1332D;
-  }
+

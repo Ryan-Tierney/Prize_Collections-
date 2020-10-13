@@ -12,19 +12,8 @@
     
         <main> 
             <h3> Start a new collection</h3>
-            <div class="new_collection_container">
-            <form id="new_collection_form">
-                <label>Name:</label>
-                <input type="text", id="name"><br/><br/> 
+            <div class="new_collection_container" id="collection_form">
 
-                <label>Description:</label>
-                <input type="text", id="description"><br/><br/>
-
-                <label>Worth:</label>
-                <input type="text", id="worth"><br/><br/>
-                
-                <input type="submit", value="Submit" style="color:white;background-color:red ">
-            </form>
 
             </div> 
 
@@ -33,18 +22,17 @@
 
 
 
-            <div id="collections=container">
+            <div id="collections-container">
 
 
                 
             </div>
+            <div id="items-container">
+
+            </div>
         </main>
-        
-        
-        <script src="src/components/collections.js"></script>
-        <script src="src/components/app.js"></script>
-        <script src="src/adapters/CollectionsAdapter.js"></script>
-        <script src="src/index.js"></script>
-        
+     <script src="src/item.js"></script>   
+     <script src="src/collection.js"></script>
+     <script src="src/index.js"></script>        
     </body>
 </html>

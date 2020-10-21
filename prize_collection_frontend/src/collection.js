@@ -133,7 +133,7 @@ function addCollectionsClickListeners() {
     })
 }
 
-Collection.prototype.collectionItemsHtml = function() { 
+ Collection.prototype.collectionItemsHtml = function() { 
     
     let collectionItems = this.items.map(item => { 
 
@@ -150,7 +150,7 @@ Collection.prototype.collectionItemsHtml = function() {
     }).join('')
 
     return (collectionItems)
-}
+} 
 
 Collection.prototype.collectionHtml = function() { 
 
@@ -176,7 +176,7 @@ Collection.prototype.addItemButton = function() {
     addNewItemButton.id = this.id 
     addNewItemButton.innerText = "Add Item"
     addNewItemButton.style.backgroundColor = "Orange"
-}
+} 
 
 
 function renderCollectionsHtml(data) { 
